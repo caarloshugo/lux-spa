@@ -1,0 +1,92 @@
+{"profile_default":"default",
+		"profile_dynamic":"1",
+		"compression":"0",
+		"outdated_browser":"1",
+		"twitter":"0",
+		"plusone":"0",
+		"facebook":"0",
+		"tracking_code":"",
+	"profile_data":{
+		"default":{
+			"bodyFont":"Arial",
+			"headerFont":"Overlock",
+			"menuFont":"Overlock",
+			"body_color":"#444444",
+			"baseColor":"#820068",
+			"hoverColor":"#CC0099",
+			"typography":"1",
+			"date":"1",
+			"totop_scroller":"1",
+			"warp_branding":"1",
+			"system_output":"1",
+			"responsive":"1",
+			"template_width":"980",
+			"sidebar-a_width":"25",
+			"sidebar-b_width":"25",
+			"sidebar-a":"right",
+			"sidebar-b":"right",
+			"top-a":"equal",
+			"top-b":"equal",
+			"innertop":"equal",
+			"innerbottom":"equal",
+			"bottom-a":"equal",
+			"bottom-b":"equal",
+			"menu_width":"250",
+			"present":"1"
+		},	
+		"Magenta":{
+			"bodyFont":"Arial",
+			"headerFont":"Overlock",
+			"menuFont":"Overlock",
+			"body_color":"#444444",
+			"baseColor":"#820068",
+			"hoverColor":"#CC0099",
+			"present":"1"
+		},
+		"Blue":{
+			"bodyFont":"Arial",
+			"headerFont":"Gentium Basic",
+			"menuFont":"Gentium Basic",
+			"body_color":"#444444",
+			"baseColor":"#0099FF",
+			"hoverColor":"#0073bf",
+			"present":"1"
+		},
+		"Green":{
+			"bodyFont":"Arial",
+			"headerFont":"Gentium Basic",
+			"menuFont":"Gentium Basic",
+			"body_color":"#444444",
+			"baseColor":"#427739",
+			"hoverColor":"#0a4700",
+			"present":"1"
+		},
+		"Rose":{
+			"bodyFont":"Arial",
+			"headerFont":"Gentium Basic",
+			"menuFont":"Gentium Basic",
+			"body_color":"#444444",
+			"baseColor":"#e63e56",
+			"hoverColor":"#991a2d",
+			"present":"1"
+		},
+		"Orange":{
+			"bodyFont":"Arial",
+			"headerFont":"Gentium Basic",
+			"menuFont":"Gentium Basic",
+			"body_color":"#444444",
+			"baseColor":"#CD4F00",
+			"hoverColor":"#993b00",
+			"present":"1"
+			},
+		"Turquoise":{
+			"bodyFont":"Arial",
+			"headerFont":"Gentium Basic",
+			"menuFont":"Gentium Basic",
+			"body_color":"#444444",
+			"baseColor":"#179a95",
+			"hoverColor":"#006f6b",
+			"present":"1"
+		}
+	},
+"profile_map":[]}

@@ -1,0 +1,60 @@
+/*
+Theme Name: Beauty Salon
+Theme URI: http://www.bdtheme.com
+Description: Beauty Salon Responsive Wordpress Template Powered by Warp Master Theme by YOOtheme
+Version: 1.4.0
+Author: BDThemes
+Author URI: http://www.bdtheme.com
+License: Regular License / Extended License
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: Beauty Salon, Beauty, Salon, Massage Therapy
+*/
+
+@import url(css/shortcodes.css);
+
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	background: #eee;
+	margin-bottom: 1.625em;
+	max-width: 96%;
+	padding: 9px;
+}
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+	max-width: 98%;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	color: #666;
+	font-family: Georgia, serif;
+	font-size: 12px;
+}
+.wp-caption .wp-caption-text {
+	margin-bottom: 0.6em;
+	padding: 10px 0 5px 40px;
+	position: relative;
+}
+.wp-caption .wp-caption-text:before {
+	color: #666;
+	content: '\2014';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 5px;
+	position: absolute;
+	left: 10px;
+	top: 7px;
+}
+.wp-caption-text{}
+
+.sticky{}
+.blog .sticky .entry-header .entry-meta {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+.gallery-caption{}
+.bypostauthor{}

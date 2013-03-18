@@ -1,0 +1,313 @@
+
+/* Content Boxes */
+
+.contentbox1,
+.contentbox2,
+.contentbox3,
+.contentbox4 { padding: 15px; margin-bottom: 15px; border-radius: 3px; }
+
+/* Pre/Code Styles */
+
+pre { overflow: auto; padding: 17px 15px; margin-bottom: 15px; font-size: 11px; line-height: 17px; cursor: text; }
+
+pre { background: #fafafa; border: 1px solid #eaeaea; color: #555; }
+
+pre.lines { background: #e1e1e1 url(../images/typography/light/pre-lines.png) 50% 0; border: none; color: #333; }
+
+/* Emphasis Styles*/
+
+em.italic { font-style: italic; font-weight: bold; }
+
+em.bold { font-size: 120%; font-weight: bold; line-height: 145%; font-style: normal; }
+
+em.bold2 { font-size: 135%; font-weight: bold; line-height: 120%; font-style: normal; }
+
+em.normal { font-style: normal; }
+
+em.nobold { font-weight: normal; }
+
+em.highlight { font-style: normal; padding: 2px 5px; border-radius: 4px; text-shadow: none; }
+
+em.highlight.white { background: #ddd; color: #000; }
+
+em.highlight.black { background: #000; color: #fff; }
+
+em.highlight.green { background: #74924A; color: #fff; }
+
+em.highlight.yellow { background: #D69839; color: #fff; }
+
+em.highlight.blue { background: #488AAD; color: #fff; }
+
+em.highlight.red { background: #BD5151; color: #fff; }
+
+.rt-upper { text-transform: uppercase; }
+
+.rt-center { text-align: center; }
+
+.rt-justify { text-align: justify; }
+
+/* Drop Caps */
+
+p.dropcap { overflow: hidden; }
+
+p.dropcap:first-letter { font-size: 300%; margin: 0 5px 0 0; line-height: 110%; float: left; display: inline-block; }
+
+p.dropcap2:first-letter,
+p.dropcap4:first-letter,
+p.dropcap6:first-letter { font-size: 30px; margin: 0 10px 10px 0; line-height: 30px; float: left; display: inline-block; border-radius: 30px; padding: 5px 10px; }
+
+p.dropcap3:first-letter,
+p.dropcap5:first-letter,
+p.dropcap7:first-letter { font-size: 30px; margin: 0 10px 10px 0; line-height: 30px; float: left; display: inline-block; padding: 4px 8px; }
+
+p.dropcap2:first-letter { background: #555; color: #fff; }
+
+p.dropcap3:first-letter { background: #555; color: #fff; border: 1px solid #fff; }
+
+p.dropcap4:first-letter { background: #ddd; color: #555; }
+
+p.dropcap5:first-letter { background: #ddd; color: #555; border: 1px solid rgba(255,255,255,0.3); }
+
+/* Inset Styles */
+
+span.inset-left { float: left; margin-right: 20px; }
+
+span.inset-right { float: right; margin-left: 20px; }
+
+span.inset-right-title,
+span.inset-left-title { display: block; font-size: 100%; font-weight: bold; }
+
+span.inset-left,
+span.inset-right { display: block; padding: 10px; width: 20%; font-size: 100%; font-style: italic; margin-top: 15px; position: relative; text-align: justify; margin-bottom: 15px; }
+
+/* List and Text Styles - Icons */
+
+ul.list-icon { padding: 0; margin: 0 0 15px 0; background: none; }
+
+ul.list-icon li { list-style: none; padding: 0 0 0 24px; margin: 0 0 5px 0; background-repeat: no-repeat; }
+
+ul.list-icon li a { font-size: 100%; line-height: 1.7em; }
+
+.text-icon { display: inline-block; line-height: 20px; font-size: 110%; background-repeat: no-repeat; padding-left: 24px; }
+
+span.email,
+span.phone,
+span.quote,
+span.cart,
+span.rss,
+span.tags,
+span.write,
+span.info,
+span.sound,
+ul.email li,
+ul.phone li,
+ul.quote li,
+ul.cart li,
+ul.rss li,
+ul.tags li,
+ul.write li,
+ul.info li,
+ul.sound li { background-image: url(../images/typography/dark/icon-set1.png); }
+
+span.email,
+span.phone,
+span.quote,
+span.cart,
+span.rss,
+span.tags,
+span.write,
+span.info,
+span.sound,
+ul.email li,
+ul.phone li,
+ul.quote li,
+ul.cart li,
+ul.rss li,
+ul.tags li,
+ul.write li,
+ul.info li,
+ul.sound li { background-image: url(../images/typography/light/icon-set1.png); }
+
+span.rightarrow,
+span.leftarrow,
+span.circlearrow,
+span.downarrow,
+span.uparrow,
+span.person,
+span.calendar,
+span.doc,
+span.bulb,
+ul.rightarrow li,
+ul.leftarrow li,
+ul.circlearrow li,
+ul.downarrow li,
+ul.uparrow li,
+ul.person li,
+ul.calendar li,
+ul.doc li,
+ul.bulb li { background-image: url(../images/typography/dark/icon-set2.png); }
+
+span.rightarrow,
+span.leftarrow,
+span.circlearrow,
+span.downarrow,
+span.uparrow,
+span.person,
+span.calendar,
+span.doc,
+span.bulb,
+ul.rightarrow li,
+ul.leftarrow li,
+ul.circlearrow li,
+ul.downarrow li,
+ul.uparrow li,
+ul.person li,
+ul.calendar li,
+ul.doc li,
+ul.bulb li { background-image: url(../images/typography/light/icon-set2.png); }
+
+span.twitter,
+span.youtube,
+span.skype,
+span.facebook,
+span.like,
+span.video,
+span.dropbox,
+span.vimeo,
+span.paypal,
+ul.twitter li,
+ul.youtube li,
+ul.skype li,
+ul.facebook li,
+ul.like li,
+ul.video li,
+ul.dropbox li,
+ul.vimeo li,
+ul.paypal li { background-image: url(../images/typography/dark/icon-set3.png); }
+
+span.twitter,
+span.youtube,
+span.skype,
+span.facebook,
+span.like,
+span.video,
+span.dropbox,
+span.vimeo,
+span.paypal,
+ul.twitter li,
+ul.youtube li,
+ul.skype li,
+ul.facebook li,
+ul.like li,
+ul.video li,
+ul.dropbox li,
+ul.vimeo li,
+ul.paypal li { background-image: url(../images/typography/light/icon-set3.png); }
+
+.text-icon.email,
+.text-icon.rightarrow,
+.text-icon.twitter,
+ul.email li,
+ul.rightarrow li,
+ul.twitter li { background-position: 0 4px; }
+
+.text-icon.phone,
+.text-icon.leftarrow,
+.text-icon.youtube,
+ul.phone li,
+ul.leftarrow li,
+ul.youtube li { background-position: 0 -296px; }
+
+.text-icon.quote,
+.text-icon.circlearrow,
+.text-icon.skype,
+ul.quote li,
+ul.circlearrow li,
+ul.skype li { background-position: 0 -596px; }
+
+.text-icon.cart,
+.text-icon.downarrow,
+.text-icon.facebook,
+ul.cart li,
+ul.downarrow li,
+ul.facebook li { background-position: 0 -896px; }
+
+.text-icon.rss,
+.text-icon.uparrow,
+.text-icon.like,
+ul.rss li,
+ul.uparrow li,
+ul.like li { background-position: 0 -1196px; }
+
+.text-icon.tags,
+.text-icon.person,
+.text-icon.video,
+ul.tags li,
+ul.person li,
+ul.video li { background-position: 0 -1496px; }
+
+.text-icon.write,
+.text-icon.calendar,
+.text-icon.dropbox,
+ul.write li,
+ul.calendar li,
+ul.dropbox li { background-position: 0 -1796px; }
+
+.text-icon.info,
+.text-icon.doc,
+.text-icon.vimeo,
+ul.info li,
+ul.doc li,
+ul.vimeo li { background-position: 0 -2096px; }
+
+.text-icon.sound,
+.text-icon.bulb,
+.text-icon.paypal,
+ul.sound li,
+ul.bulb li,
+ul.paypal li { background-position: 0 -2396px; }
+
+/* Notice/System Styles */
+
+p.approved,
+p.attention,
+p.alert,
+p.notice { padding: 15px 15px 15px 44px; border-radius: 6px; font-weight: bold; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2); }
+
+#system-message dd ul { border-radius: 6px; }
+
+#system-message dd ul li { padding-left: 32px; }
+
+.approved a,
+.attention a,
+.alert a,
+.notice a { color: #222 !important; text-decoration: underline; }
+
+.approved a:hover,
+.attention a:hover,
+.alert a:hover,
+.notice a:hover { color: #000 !important; text-shadow: none; }
+
+.approved { background: #EEF6E4 url(../images/icons/list_check.png) no-repeat 12px center; text-shadow: 1px 1px 1px rgba(255,255,255,0.3); border: 1px solid #8bb261; color: #444; }
+
+p.attention,
+#system-message dd.notice ul { background: #FBF9EA url(../images/icons/box_hint.png) no-repeat 4px center; text-shadow: 1px 1px 1px rgba(255,255,255,0.3); border: 1px solid #cab22c; color: #444; }
+
+p.alert,
+#system-message dd.error ul { background: #FBEAEA url(../images/icons/box_warning.png) no-repeat 4px center; color: #333; text-shadow: 1px 1px 1px rgba(255,255,255,0.3); border: 1px solid #ca2c2c; }
+
+p.notice,
+#system-message dd ul { background: #EBFAFF url(../images/icons/box_info.png) no-repeat 4px center; color: #444; text-shadow: 1px 1px 1px rgba(255,255,255,0.3); border: 1px solid #00aae8; }
+
+/* Forms and Inputs */
+
+.inputbox,
+textarea,
+.rt-joomla .contact input.required:focus,
+.rt-joomla .contact textarea.required:focus { -webkit-transition: border linear 0.2s, box-shadow linear 0.2s; -moz-transition: border linear 0.2s, box-shadow linear 0.2s; -ms-transition: border linear 0.2s, box-shadow linear 0.2s; -o-transition: border linear 0.2s, box-shadow linear 0.2s; transition: border linear 0.2s, box-shadow linear 0.2s; }
+
+.inputbox:focus,
+textarea:focus,
+.rt-joomla .contact input.required:focus,
+.rt-joomla .contact textarea.required:focus { outline: 0; }
+ 

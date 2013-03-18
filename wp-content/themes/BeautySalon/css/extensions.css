@@ -1,0 +1,17 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* article info style */
+.component-content .rt-articleinfo dd {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.08);
+	border-radius: 3px 3px 3px 3px;
+	display: inline-block;
+	padding: 0 8px;
+	margin-left: 10px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+.component-content .rt-articleinfo dd:first-child {
+	margin-left: 0;
+}
+.component-content .rt-category, .component-content .rt-date-modified, .component-content .rt-date-published, .component-content .rt-author, .component-content .rt-date-posted, .component-content .rt-hits {
+	font-size: 95%;
+}
