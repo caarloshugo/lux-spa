@@ -1,4 +1,0 @@
-lux-spa
-=======
-
-Lux Spa

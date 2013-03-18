@@ -16,7 +16,7 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'luxsap');
+define('DB_NAME', 'luxspa');
 
 /** Tu nombre de usuario de MySQL */
 define('DB_USER', 'root');
