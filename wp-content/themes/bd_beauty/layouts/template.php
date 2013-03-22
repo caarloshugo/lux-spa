@@ -178,7 +178,76 @@ $template_path = get_template_directory_uri();
 <div class="footer-wrapper">
 <div class="footer-shadow">
  <div class="wrapper clearfix">
-
+	<section id="bottom-b" class="grid-block">
+		<div class="grid-box width25 grid-h">
+			<div class="module mod-box  deepest">
+				<div class="module-title-wrapper">
+					<h3 class="module-title"><span class="color">CONTACT</span> US</h3>
+				</div>
+				
+				<p><i class="icon-home"></i> 46/1 west malibagh, Dhaka, Bangladesh</p>
+				<p><i class="icon-th"></i> +880-1718-542596</p>
+				<p><i class="icon-envelope"></i> <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+				<p><i class="icon-globe"></i>  <a href="http://www.bdtheme.com">www.yoursite.com</a></p>
+			</div>
+		</div>
+		
+		<div class="grid-box width25 grid-h">
+			<div class="module mod-box  deepest">
+				<div class="module-title-wrapper">
+					<h3 class="module-title"><span class="color">WE&#8217;RE</span> OPEN</h3>
+				</div>
+				<p>
+					<i class="icon-calendar"></i> Tuesday and Thursday<br /> 
+					<i class="icon-time"></i> 9:00am - 7:00pm
+				</p>
+				
+				<p>
+					<i class="icon-calendar"></i> Wednesday and Friday<br /> 
+					<i class="icon-time"></i> 10:30am - 8:00pm
+				</p>
+				
+				<p>
+					<i class="icon-calendar"></i> Saturday<br /> 
+					<i class="icon-time"></i> 10:30am - 2:00pm
+				</p>		
+			</div>
+		</div>
+		
+		<div class="grid-box width25 grid-h">
+			<div class="module mod-box  deepest">
+				<div class="module-title-wrapper">
+					<h3 class="module-title"><span class="color">ABOUT</span> US</h3>
+				</div>
+				<p><i class="icon-leaf"></i> Sed sed eros nulla. In fermentum turpis quis sem mollis tempor. Nulla mollis, lorem vel commodo dignissim, sapien purus consectetur sapien, sit amet pellentesque enim lectus</p>		
+			</div>
+		</div>
+		
+		<div class="grid-box width25 grid-h">
+			<div class="module mod-box  deepest">
+				<div class="module-title-wrapper">
+					<h3 class="module-title"><span class="color">FOOTER</span> MENU</h3>
+				</div>
+				<ul class="menu menu-sidebar">
+					<li class="level1 item907">
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/news/" class="level1"><span>Latest News</span></a>
+					</li>
+					
+					<li class="level1 item909">
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/photo-gallery/" class="level1"><span>Photo Gallery</span></a>
+					</li>
+					
+					<li class="level1 item923">
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/client-testimonials/" class="level1"><span>Client Testimonials</span></a>
+					</li>
+					
+					<li class="level1 item957">
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/category/shortcodes/" class="level1"><span>Shortcodes</span></a></li><li class="level1 item958"><a href="http://demo.bdtheme.com/wordpress/beautysalon/typography-2/" class="level1"><span>Template Typography</span></a>
+					</li>
+				</ul>		
+			</div>
+		</div>
+	</section>	
 		
 		<?php if ($this['modules']->count('footer + debug') || $this['config']->get('warp_branding') || $this['config']->get('totop_scroller')) : ?>
 		<footer id="footer">
