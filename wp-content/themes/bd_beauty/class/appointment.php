@@ -13,7 +13,7 @@ class Appointment {
 	
 	public function all() {
 		$data = $this->psql->query("select * from appointments");
-		die(var_dump($data));
+		
 		return $data;
 	}
 }
