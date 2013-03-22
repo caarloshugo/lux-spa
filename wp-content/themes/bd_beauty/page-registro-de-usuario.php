@@ -17,7 +17,7 @@ $records     = $Appointment->all();
 	<input type="hidden" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />
 
 	<p class="one-third">
-		<label for="name">Nombre*:</label>
+		<label for="name">Nombre(s)*:</label>
 		<input id="name" name="cf_name" class="required" type="text" />
 	</p>
 
