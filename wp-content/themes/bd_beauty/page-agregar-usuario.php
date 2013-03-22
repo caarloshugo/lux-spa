@@ -27,7 +27,7 @@ $records     = $Appointment->all();
 	</p>
 	
 	<p class="one-third last">
-		<label for="birthday">Fecha de cumplea&ntilde;*:</label>
+		<label for="birthday">Fecha de cumplea&ntilde;os*:</label>
 		<input id="birthday" name="birthday" class="required" type="text" />
 	</p>
 
