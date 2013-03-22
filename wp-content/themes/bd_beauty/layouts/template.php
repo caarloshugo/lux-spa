@@ -174,33 +174,6 @@ $template_path = get_template_directory_uri();
 		<?php endif; ?>
 </div>
 </div>
-<div class="footer-wrapper">
-<div class="footer-shadow">
- <div class="wrapper clearfix">
-		<?php if ($this['modules']->count('bottom-b')) : ?>
-		<section id="bottom-b" class="grid-block"><?php echo $this['modules']->render('bottom-b', array('layout'=>$this['config']->get('bottom-b'))); ?></section>
-		<?php endif; ?>
-		
-		<?php if ($this['modules']->count('footer + debug') || $this['config']->get('warp_branding') || $this['config']->get('totop_scroller')) : ?>
-		<footer id="footer">
-
-			<?php if ($this['config']->get('totop_scroller')) : ?>
-			<a id="totop-scroller" href="#page"></a>
-			<?php endif; ?>
-
-			<?php
-				echo $this['modules']->render('footer');
-				$this->output('warp_branding');
-				echo $this['modules']->render('debug');
-			?>
-
-		</footer>
-		<?php endif; ?>
-
-	</div>
-	
-    </div>
-    </div>
     
 	<?php echo $this->render('footer'); ?>
     
