@@ -22,17 +22,17 @@ $records     = $Appointment->all();
 	</p>
 
 	<p class="one-third">
-		<label for="name">Your Name*:</label>
+		<label for="name">Nombre*:</label>
 		<input id="name" name="cf_name" class="required" type="text" />
 	</p>
 
 	<p class="one-third last">
-		<label for="email">E-Mail Address*:</label>
+		<label for="email">E-Mail*:</label>
 		<input id="email" name="email" class="required" type="text" />
 	</p>
 
 	<p>
-		<label for="email">Your Message*:</label>
+		<label for="email">Mensage*:</label>
 		<textarea id="message" name="cf_message" class="required" cols="40" rows="8" placeholder="Your message here*"></textarea>
 	</p>
 	
