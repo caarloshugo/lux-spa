@@ -52,7 +52,7 @@ $records     = $Appointment->all();
 	<div class="message"></div>
 
 	<p>
-		<input type="submit" name="submit" value="Send Message" />
+		<input type="submit" name="submit" value="Registrar" />
 		<span class="spinner"><span>Please wait...</span></span>
 	</p>
 </form>
