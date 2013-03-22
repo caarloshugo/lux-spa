@@ -2,7 +2,7 @@
 
 include "db/db.php";
 
-class Concentration  {
+class Appointment {
 	
 	public function __construct() {
 		include "config/database.php";
