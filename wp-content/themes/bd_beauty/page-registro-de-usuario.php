@@ -1,17 +1,18 @@
-<?php get_header(); ?>
-
-
 <?php
-// Concentration
-include "class/appointment.php";
-include "class/functions/string.php";
 
 if(isset($_POST["submit"])) {
 	echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 }
 
-$Appointment = new Appointment();
-$records     = $Appointment->all();
+else {	
+	get_header();
+
+	// Concentration
+	include "class/appointment.php";
+	include "class/functions/string.php";
+
+	$Appointment = new Appointment();
+	$records     = $Appointment->all();
 ?>
 
 <form id="contactform" class="three-column-form" method="post" action="">
@@ -60,4 +61,7 @@ $records     = $Appointment->all();
 	</p>
 </form>
       
-<?php get_footer(); ?>
+<?php 
+	get_footer(); 
+}
+?>
