@@ -6,11 +6,15 @@
 include "class/appointment.php";
 include "class/functions/string.php";
 
+if(isset($_POST["submit"])) {
+	die("ok");
+}
+
 $Appointment = new Appointment();
 $records     = $Appointment->all();
 ?>
 
-<form id="contactform" class="three-column-form" method="post" action="http://107.22.236.217/lux-spa/wp-content/themes/bd_beauty/contact_form_mailer.php">
+<form id="contactform" class="three-column-form" method="post" action="">
 	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
 	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
 	<input type="hidden" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />
