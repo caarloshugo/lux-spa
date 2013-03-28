@@ -17,7 +17,9 @@ class User {
 		return $data;
 	}
 	
-	public function add($name, $lastname, $email, $birthday, $sex, $telephone) {
+	public function add($name, $lastname, $email, $birthday, $sex, $telephone, $password) {
+		$password = md5($password);
+		
 		if($sex==="0") {
 			$sex="true"; // Masculino
 		} else {
@@ -25,8 +27,8 @@ class User {
 		}
 		
 		$query = "insert into users ";
-		$query .="(name,lastname,birthday_varchar,sex,email,telephone,status,type) values ";
-		$query .="('".$name."','".$lastname."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
+		$query .="(name,lastname,password,birthday_varchar,sex,email,telephone,status,type) values ";
+		$query .="('".$name."','".$lastname."','".$password."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
 		
 		$data = $this->psql->query($query);
 		
