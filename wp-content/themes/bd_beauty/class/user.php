@@ -19,12 +19,12 @@ class User {
 	
 	public function add($name, $lastname, $email, $birthday, $sex, $telephone) {
 		if($sex==="0") {
-			$sex=true; // Masculino
+			$sex="true"; // Masculino
 		} else {
-			$sex=false; //Femenino
+			$sex="false"; //Femenino
 		}
 		
-		$query = "into users ";
+		$query = "insert into users ";
 		$query .="(name,lastname,birthday_varchar,sex,email,telephone,status,type) values ";
 		$query .="('".$name."','".$lastname."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
 		
