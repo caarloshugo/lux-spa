@@ -171,7 +171,7 @@ $template_path = get_template_directory_uri();
 		<section id="appointment" class="grid-block"><div class="module   deepest">
 		<div class="appointment">
 			<div class="aptext clearfix">
-				<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui! </h2>
+				<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui! ola ke ase?</h2>
 				<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
 			</div>                
 		</div></section>
