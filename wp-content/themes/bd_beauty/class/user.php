@@ -35,6 +35,14 @@ class User {
 		return $data;
 	}
 	
+	public function login() {
+		
+	}
+	
+	public function logout() {
+		
+	}
+	
 	public function edit() {
 		$data = $this->psql->query("insert into * from users");
 		
