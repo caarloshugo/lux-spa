@@ -50,21 +50,21 @@ if(isset($_POST["submit"])) {
 	</p>
 	
 	<p class="one-third">
+		<label for="telephone">Tel&eacute;fono*:</label>
+		<input id="telephone" name="telephone" class="required" type="text" />
+	</p>
+	
+	<p class="one-third last">
+		<label for="email">Password*:</label>
+		<input id="email" name="email" class="required" type="password" />
+	</p>
+	
+	<p class="one-third last">
 		<label for="email">Sexo*:</label>
 		<select name="sex" id="sex" class="required">
 			<option value="0">Masculino</option>
 			<option value="1">Femenino</option>
 		</select>
-	</p>
-	
-	<p class="one-third last">
-		<label for="telephone">Tel&eacute;fono*:</label>
-		<input id="telephone" name="telephone" class="required" type="text" />
-	</p>
-	
-	<p class="one-third">
-		<label for="email">Password*:</label>
-		<input id="email" name="email" class="required" type="password" />
 	</p>
 	
 	<div class="message"></div>
