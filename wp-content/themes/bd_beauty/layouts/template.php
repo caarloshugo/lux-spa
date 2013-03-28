@@ -114,10 +114,6 @@ $template_path = get_template_directory_uri();
 		<?php if ($this['modules']->count('top-a')) : ?>
 		<section id="top-a" class="grid-block"><?php echo $this['modules']->render('top-a', array('layout'=>$this['config']->get('top-a'))); ?></section>
 		<?php endif; ?>
-		
-		<?php if ($this['modules']->count('top-b')) : ?>
-		<section id="top-b" class="grid-block"><?php echo $this['modules']->render('top-b', array('layout'=>$this['config']->get('top-b'))); ?></section>
-		<?php endif; ?>
         
         <?php if ($this['modules']->count('services')) : ?>
 		<section id="services" class="grid-block"><?php echo $this['modules']->render('services', array('layout'=>$this['config']->get('services'))); ?></section>
@@ -170,16 +166,16 @@ $template_path = get_template_directory_uri();
 		<?php endif; ?>
 		
 		<section id="appointment" class="grid-block"><div class="module   deepest">
-
-		<div class="appointment">
-		<div class="aptext clearfix">
-		<h2>Te esperamos en Lux Spa! Has una reservaci—n aqui! </h2>
-		<a class="apbutton" href="?page_id=744">Agendar Cita</a></div>
-		</div>                
-		</div></section>
 		
 </div>
 </div>
+ 
+<div class="appointment">
+	<div class="aptext clearfix">
+		<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui! </h2>
+		<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
+	</div>                
+</div></section>
 
 <div class="footer-wrapper">
 <div class="footer-shadow">
@@ -232,7 +228,7 @@ $template_path = get_template_directory_uri();
 				</div>
 				<ul class="menu menu-sidebar">
 					<li class="level1 item907">
-						<a href="http://demo.bdtheme.com/wordpress/beautysalon/news/" class="level1"><span>òltimas Noticias</span></a>
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/news/" class="level1"><span>&Uacute;ltimas Noticias</span></a>
 					</li>
 					
 					<li class="level1 item909">
