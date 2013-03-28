@@ -57,8 +57,8 @@ if(isset($_POST["submit"])) {
 	</p>
 	
 	<p class="one-third last">
-		<label for="email">Password*:</label>
-		<input id="email" name="email" class="required" type="password" />
+		<label for="password">Password*:</label>
+		<input id="password" name="password" class="required" type="password" />
 	</p>
 	
 	<p class="one-third" id="success_msg">
