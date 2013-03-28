@@ -28,9 +28,8 @@ class User {
 		$query .="(name,lastname,birthday_varchar,sex,email,telephone,status,type) values ";
 		$query .="('".$name."','".$lastname."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
 		
-		die(var_dump($query));
-		$data = $this->psql->query("insert into * from users");
-		
+		$data = $this->psql->query($query);
+		die(var_dump($data));
 		return $data;
 	}
 	
