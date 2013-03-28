@@ -7,14 +7,15 @@ if(isset($_POST["submit"])) {
 	$email     = $_POST["email"];
 	$sex       = $_POST["sex"];
 	$telephone = $_POST["telephone"];
+	$password  = $_POST["password"];
 	
-	if($name !== "" and $lastname !== "" and $email !== "" and $birthday !== "" and $telephone !== "") {
-		// User
+	if($name !== "" and $lastname !== "" and $email !== "" and $birthday !== "" and $telephone !== "" and $password !== "") {
+		# User Class
 		include "class/user.php";
 		include "class/functions/string.php";
 
 		$User = new User();
-		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone);
+		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone, $password);
 		
 		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 	} else {
