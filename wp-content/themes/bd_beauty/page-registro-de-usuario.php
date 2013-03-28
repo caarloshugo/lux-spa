@@ -17,9 +17,9 @@ if(isset($_POST["submit"])) {
 		$User = new User();
 		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone, $password);
 		
-		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
+		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Gracias por registrarte, recibirás un email" />';
 	} else {
-		echo 'Please fill in all fields correctly';
+		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Por favor, rellene todos los campos correctamente" />';
 	}
 	
 } else {	
