@@ -16,9 +16,9 @@ if(isset($_POST["submit"])) {
 		$User = new User();
 		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone);
 		
-		echo '<div class="message">Thank you for your email we will fixed appointment by phone call</div>';
+		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 	} else {
-		echo '<div class="message">Please fill in all fields correctly</div>';
+		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />';
 	}
 	
 } else {	
@@ -66,6 +66,8 @@ if(isset($_POST["submit"])) {
 		<label for="email">Password*:</label>
 		<input id="email" name="email" class="required" type="password" />
 	</p>
+	
+	<div class="message"></div>
 
 	<p>
 		<input type="submit" name="submit" value="Registrar" />
