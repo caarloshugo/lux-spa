@@ -169,9 +169,15 @@ $template_path = get_template_directory_uri();
 		<section id="bottom-a" class="grid-block"><?php echo $this['modules']->render('bottom-a', array('layout'=>$this['config']->get('bottom-a'))); ?></section>
 		<?php endif; ?>
 		
-		<?php if ($this['modules']->count('appointment')) : ?>
-		<section id="appointment" class="grid-block"><?php echo $this['modules']->render('appointment', array('layout'=>$this['config']->get('appointment'))); ?></section>
-		<?php endif; ?>
+		<section id="appointment" class="grid-block"><div class="module   deepest">
+
+		<div class="appointment">
+		<div class="aptext clearfix">
+		<h2>Te esperamos en Lux Spa! Has una reservaci—n aqui! </h2>
+		<a class="apbutton" href="?page_id=744">Agendar Cita</a></div>
+		</div>                
+		</div></section>
+		
 </div>
 </div>
 
@@ -182,67 +188,66 @@ $template_path = get_template_directory_uri();
 		<div class="grid-box width25 grid-h">
 			<div class="module mod-box  deepest">
 				<div class="module-title-wrapper">
-					<h3 class="module-title"><span class="color">CONTACT</span> US</h3>
+					<h3 class="module-title"><span class="color">DOMICILIO</span></h3>
 				</div>
 				
-				<p><i class="icon-home"></i> 46/1 west malibagh, Dhaka, Bangladesh</p>
-				<p><i class="icon-th"></i> +880-1718-542596</p>
-				<p><i class="icon-envelope"></i> <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
-				<p><i class="icon-globe"></i>  <a href="http://www.bdtheme.com">www.yoursite.com</a></p>
+				<p><i class="icon-home"></i> Fuente de Molino 49-B 4to piso, Lomas de Tecamachalco <BR/> (dentro del gimnasio Sports World)</p>
+				<p><i class="icon-th"></i> 46 32 17 16</p>
+				<p><i class="icon-envelope"></i> <a href="mailto:info@luxspa.com.mx">info@luxspa.com.mx</a></p>
+				<p><i class="icon-globe"></i>  <a href="http://www.luxspa.com.mx/">www.luxspa.com.mx/</a></p>
 			</div>
 		</div>
 		
 		<div class="grid-box width25 grid-h">
 			<div class="module mod-box  deepest">
 				<div class="module-title-wrapper">
-					<h3 class="module-title"><span class="color">WE&#8217;RE</span> OPEN</h3>
+					<h3 class="module-title"><span class="color">HORARIOSS</span></h3>
 				</div>
 				<p>
-					<i class="icon-calendar"></i> Tuesday and Thursday<br /> 
-					<i class="icon-time"></i> 9:00am - 7:00pm
+					<i class="icon-calendar"></i> Lunes a Viernes<br /> 
+					<i class="icon-time"></i> 7:00am - 9:00pm
 				</p>
 				
 				<p>
-					<i class="icon-calendar"></i> Wednesday and Friday<br /> 
-					<i class="icon-time"></i> 10:30am - 8:00pm
+					<i class="icon-calendar"></i> Sabados y Domingos<br /> 
+					<i class="icon-time"></i> 9:00am - 5:00pm
 				</p>
-				
-				<p>
-					<i class="icon-calendar"></i> Saturday<br /> 
-					<i class="icon-time"></i> 10:30am - 2:00pm
-				</p>		
+					
 			</div>
 		</div>
 		
 		<div class="grid-box width25 grid-h">
 			<div class="module mod-box  deepest">
 				<div class="module-title-wrapper">
-					<h3 class="module-title"><span class="color">ABOUT</span> US</h3>
+					<h3 class="module-title"><span class="color">LUX</span>SPA</h3>
 				</div>
-				<p><i class="icon-leaf"></i> Sed sed eros nulla. In fermentum turpis quis sem mollis tempor. Nulla mollis, lorem vel commodo dignissim, sapien purus consectetur sapien, sit amet pellentesque enim lectus</p>		
+				<p> Somos una empresa comprometida a brindar bienestar a nuestros clientes a travez de servicios de calidad a precios accesibles</p>		
 			</div>
 		</div>
 		
 		<div class="grid-box width25 grid-h">
 			<div class="module mod-box  deepest">
 				<div class="module-title-wrapper">
-					<h3 class="module-title"><span class="color">FOOTER</span> MENU</h3>
+					<h3 class="module-title"><span class="color">OTROS</span></h3>
 				</div>
 				<ul class="menu menu-sidebar">
 					<li class="level1 item907">
-						<a href="http://demo.bdtheme.com/wordpress/beautysalon/news/" class="level1"><span>Latest News</span></a>
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/news/" class="level1"><span>òltimas Noticias</span></a>
 					</li>
 					
 					<li class="level1 item909">
-						<a href="http://demo.bdtheme.com/wordpress/beautysalon/photo-gallery/" class="level1"><span>Photo Gallery</span></a>
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/photo-gallery/" class="level1"><span>Boutique</span></a>
 					</li>
 					
 					<li class="level1 item923">
-						<a href="http://demo.bdtheme.com/wordpress/beautysalon/client-testimonials/" class="level1"><span>Client Testimonials</span></a>
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/client-testimonials/" class="level1"><span>Blog</span></a>
 					</li>
 					
 					<li class="level1 item957">
-						<a href="http://demo.bdtheme.com/wordpress/beautysalon/category/shortcodes/" class="level1"><span>Shortcodes</span></a></li><li class="level1 item958"><a href="http://demo.bdtheme.com/wordpress/beautysalon/typography-2/" class="level1"><span>Template Typography</span></a>
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/category/shortcodes/" class="level1"><span>Terapeutas</span></a></li>
+					
+					<li class="level1 item958">
+						<a href="http://demo.bdtheme.com/wordpress/beautysalon/typography-2/" class="level1"><span>Contactos</span></a>
 					</li>
 				</ul>		
 			</div>
