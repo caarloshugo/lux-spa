@@ -75,7 +75,14 @@ if(isset($_POST["submit"])) {
 		<span class="spinner"><span>Enviando ...</span></span>
 	</p>
 </form>
-      
+
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#birthday").datepicker();
+	});
+</script>
+
 <?php 
 	get_footer(); 
 }
