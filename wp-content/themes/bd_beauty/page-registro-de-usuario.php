@@ -1,10 +1,17 @@
 <?php
 
 if(isset($_POST["submit"])) {
+	$name      = $_POST["cf_name"];
+	$lastname  = $_POST["lastname"];
+	$birthday  = $_POST["birthday"];
+	$email     = $_POST["email"];
+	$sex       = $_POST["sex"];
+	$telephone = $_POST["telephone"];
+	
+	die(var_dump($name));
+	
 	echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
-}
-
-else {	
+} else {	
 	get_header();
 
 	// Concentration
