@@ -166,22 +166,21 @@ $template_path = get_template_directory_uri();
 
 		<?php if ($this['modules']->count('bottom-a')) : ?>
 		<section id="bottom-a" class="grid-block"><?php echo $this['modules']->render('bottom-a', array('layout'=>$this['config']->get('bottom-a'))); ?></section>
+		<section id="appointment" class="grid-block"><div class="module   deepest">
+			<div class="appointment">
+				<div class="aptext clearfix">
+					<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui!</h2>
+					<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
+				</div>                
+			</div>
+		 </section>
 		<?php endif; ?>
 		
 		
 		
 </div>
-<section id="appointment" class="grid-block"><div class="module   deepest">
-	<div class="appointment">
-		<div class="aptext clearfix">
-			<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui!</h2>
-			<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
-		</div>                
-	</div>
- </section>
+
 </div>
- 
- 
  
 
 <div class="footer-wrapper">
