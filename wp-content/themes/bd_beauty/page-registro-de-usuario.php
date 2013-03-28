@@ -54,12 +54,12 @@ if(isset($_POST["submit"])) {
 		<input id="telephone" name="telephone" class="required" type="text" />
 	</p>
 	
-	<p class="one-third">
+	<p class="one-third last">
 		<label for="email">Password*:</label>
 		<input id="email" name="email" class="required" type="password" />
 	</p>
 	
-	<p class="one-third last">
+	<p class="one-third message">
 		<label for="email">Sexo*:</label>
 		<select name="sex" id="sex" class="required">
 			<option value="0">Masculino</option>
