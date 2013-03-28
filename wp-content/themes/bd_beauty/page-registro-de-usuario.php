@@ -8,7 +8,14 @@ if(isset($_POST["submit"])) {
 	$sex       = $_POST["sex"];
 	$telephone = $_POST["telephone"];
 	
-	if($name !== "" and $lastname !== "" and $birthday !== "" and $telephone !== "") {
+	if($name !== "" and $lastname !== "" and $email !== "" and $birthday !== "" and $telephone !== "") {
+		// User
+		include "class/user.php";
+		include "class/functions/string.php";
+
+		$User = new User();
+		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone);
+		
 		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 	} else {
 		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />';
@@ -16,13 +23,6 @@ if(isset($_POST["submit"])) {
 	
 } else {	
 	get_header();
-
-	// Concentration
-	include "class/appointment.php";
-	include "class/functions/string.php";
-
-	$Appointment = new Appointment();
-	$records     = $Appointment->all();
 ?>
 
 <form id="contactform" class="three-column-form" method="post" action="">
