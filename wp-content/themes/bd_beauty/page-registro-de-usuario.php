@@ -19,7 +19,7 @@ if(isset($_POST["submit"])) {
 		
 		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 	} else {
-		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />';
+		echo 'Please fill in all fields correctly';
 	}
 	
 } else {	
