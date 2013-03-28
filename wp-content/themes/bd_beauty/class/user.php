@@ -29,7 +29,7 @@ class User {
 		$query .="('".$name."','".$lastname."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
 		
 		$data = $this->psql->query($query);
-		die(var_dump($data));
+		
 		return $data;
 	}
 	
