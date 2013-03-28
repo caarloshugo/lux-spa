@@ -159,12 +159,7 @@ $template_path = get_template_directory_uri();
 
 		</div>
 		
-		<div class="appointment">
-			<div class="aptext clearfix">
-				<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui! </h2>
-				<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
-			</div>                
-		</div></section>
+		
 
 		<?php endif; ?>
 		<!-- main end -->
@@ -174,6 +169,12 @@ $template_path = get_template_directory_uri();
 		<?php endif; ?>
 		
 		<section id="appointment" class="grid-block"><div class="module   deepest">
+		<div class="appointment">
+			<div class="aptext clearfix">
+				<h2>Te esperamos en Lux Spa! Has una reservaci&oacute;n aqui! </h2>
+				<a class="apbutton" href="?page_id=1223">Agendar Cita</a></div>
+			</div>                
+		</div></section>
 		
 </div>
 </div>
