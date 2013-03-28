@@ -59,7 +59,7 @@ if(isset($_POST["submit"])) {
 		<input id="email" name="email" class="required" type="password" />
 	</p>
 	
-	<p class="one-third message">
+	<p class="one-third" id="success_msg">
 		<label for="email">Sexo*:</label>
 		<select name="sex" id="sex" class="required">
 			<option value="0">Masculino</option>
