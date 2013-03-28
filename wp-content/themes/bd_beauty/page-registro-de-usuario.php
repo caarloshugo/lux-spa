@@ -81,11 +81,8 @@ if(isset($_POST["submit"])) {
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$("#birthday").datepicker({
-				showOtherMonths: true,
-				selectOtherMonths: true
-			});
-		});
+		$( "#birthday" ).datepicker( "option", "dateFormat",  "dd/mm/yy");
+	});
 </script>
 
 <?php 
