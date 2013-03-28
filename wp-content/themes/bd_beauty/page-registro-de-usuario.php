@@ -8,7 +8,11 @@ if(isset($_POST["submit"])) {
 	$sex       = $_POST["sex"];
 	$telephone = $_POST["telephone"];
 	
-	die(var_dump($name));
+	if($name !== "") {
+		die("si");
+	} else {
+		die("no");
+	}
 	
 	echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
 } else {	
