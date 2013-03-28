@@ -11,7 +11,7 @@ if(isset($_POST["submit"])) {
 	if($name !== "") {
 		die("si");
 	} else {
-		die("no");
+		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />';
 	}
 	
 	echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
@@ -29,7 +29,6 @@ if(isset($_POST["submit"])) {
 <form id="contactform" class="three-column-form" method="post" action="">
 	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
 	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
-	<input type="hidden" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />
 
 	<p class="one-third">
 		<label for="name">Nombre(s)*:</label>
