@@ -18,9 +18,7 @@ class User {
 	}
 	
 	public function add($name, $lastname, $email, $birthday, $sex, $telephone) {
-		die(var_dump($sex));
-		
-		if($sex==0) {
+		if($sex==="0") {
 			$sex=true; // Masculino
 		} else {
 			$sex=false; //Femenino
@@ -28,7 +26,7 @@ class User {
 		
 		$query = "into users ";
 		$query .="(name,lastname,birthday_varchar,sex,email,telephone,status,type) values ";
-		$query .="('".$name."','".$lastname."','".$birthday."',true,'".$email."',".$telephone.",true,true);";
+		$query .="('".$name."','".$lastname."','".$birthday."',".$sex.",'".$email."',".$telephone.",true,true);";
 		
 		die(var_dump($query));
 		$data = $this->psql->query("insert into * from users");
