@@ -206,8 +206,13 @@ $template_path = get_template_directory_uri();
 					<h3 class="module-title"><span class="color">HORARIOSS</span></h3>
 				</div>
 				<p>
-					<i class="icon-calendar"></i> Lunes a Viernes<br /> 
+					<i class="icon-calendar"></i> Lunes a Jueves<br /> 
 					<i class="icon-time"></i> 7:00am - 9:00pm
+				</p>
+				
+				<p>
+					<i class="icon-calendar"></i> Viernes<br /> 
+					<i class="icon-time"></i> 7:00am - 8:00pm
 				</p>
 				
 				<p>
