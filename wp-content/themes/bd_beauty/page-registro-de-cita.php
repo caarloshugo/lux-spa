@@ -34,11 +34,33 @@ if(isset($_POST["submit"])) {
 		<input id="email" name="email" class="required" type="text" />
 	</p>
 	
-	<p class="one-third last">
+	
+	<p class="one-third">
 		<label for="password">Password*:</label>
 		<input id="password" name="password" class="required" type="password" />
 	</p>
+		
 	
+	<p class="one-third last">
+		<label for="date">Fecha de la cita*:</label>
+		<input id="date" name="date" class="required" type="text" />
+	</p>
+	
+	<p class="one-third">
+		<label for="tratamiento">Tratamiento*:</label>
+		<select name="tratamiento" id="tratamiento" class="required">
+			<option value="1">tratamiento 1</option>
+			<option value="2">tratamiento 2</option>
+		</select>
+	</p>
+	
+	<p class="one-third">
+		<label for="terapeuta">Terapeuta*:</label>
+		<select name="terapeuta" id="terapeuta" class="required">
+			<option value="1">terapeuta 1</option>
+			<option value="2">terapeuta 2</option>
+		</select>
+	</p>
 	
 	<div class="message"></div>
 
