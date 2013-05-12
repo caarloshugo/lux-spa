@@ -28,38 +28,17 @@ if(isset($_POST["submit"])) {
 	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
 	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
 
-	<p class="one-third">
-		<label for="name">Nombre(s)*:</label>
-		<input id="name" name="cf_name" class="required" type="text" />
-	</p>
-
-	<p class="one-third">
-		<label for="lastname">Apellidos*:</label>
-		<input id="lastname" name="lastname" class="required" type="text" />
-	</p>
-	
-	<p class="one-third last">
-		<label for="birthday">Fecha de cumplea&ntilde;os*:</label>
-		<input id="birthday" name="birthday" class="required" type="text" />
-	</p>
 
 	<p class="one-third">
 		<label for="email">E-Mail*:</label>
 		<input id="email" name="email" class="required" type="text" />
 	</p>
 	
-	<p class="one-third">
-		<label for="email">Sexo*:</label>
-		<select name="sex" id="sex" class="required">
-			<option value="0">Masculino</option>
-			<option value="1">Femenino</option>
-		</select>
+	<p class="one-third last">
+		<label for="password">Password*:</label>
+		<input id="password" name="password" class="required" type="password" />
 	</p>
 	
-	<p class="one-third last">
-		<label for="telephone">Tel&eacute;fono*:</label>
-		<input id="telephone" name="telephone" class="required" type="text" />
-	</p>
 	
 	<div class="message"></div>
 
