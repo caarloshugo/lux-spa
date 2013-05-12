@@ -203,7 +203,7 @@ $template_path = get_template_directory_uri();
 		<div class="grid-box width25 grid-h">
 			<div class="module mod-box  deepest">
 				<div class="module-title-wrapper">
-					<h3 class="module-title"><span class="color">HORARIOSS</span></h3>
+					<h3 class="module-title"><span class="color">HORARIOS</span></h3>
 				</div>
 				<p>
 					<i class="icon-calendar"></i> Lunes a Jueves<br /> 
