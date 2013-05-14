@@ -23,8 +23,10 @@ if(isset($_POST["submit"])) {
 		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Por favor, rellene todos los campos correctamente" />';
 	}
 	
-} else {	
-	get_header();
+}
+
+get_header();
+
 ?>
 
 <form id="contactform" class="three-column-form" method="post" action="">
@@ -90,5 +92,4 @@ if(isset($_POST["submit"])) {
 
 <?php 
 	get_footer(); 
-}
 ?>
