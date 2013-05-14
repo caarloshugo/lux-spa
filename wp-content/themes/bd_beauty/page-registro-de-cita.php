@@ -102,7 +102,7 @@ get_header();
 			} else {
 				$.ajax({
 				url: "?page_id=1301&id_t=" + str,
-					context: document.body
+					context: document.body,
 					beforeSend: function (xhr) {
 						$("#loading").show();
 					}
