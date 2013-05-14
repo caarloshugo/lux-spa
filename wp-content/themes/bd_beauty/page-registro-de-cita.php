@@ -5,8 +5,9 @@ include "class/user.php";
 include "class/functions/string.php";
 
 $User = new User();
-$specialties = $User->getSpecialties();
-	
+$specialties   = $User->getSpecialties();
+$template_path = get_template_directory_uri();
+
 if(isset($_POST["submit"])) {
 	$terapeuta   = $_POST["terapeuta"];
 	$tratamiento = $_POST["tratamiento"];
