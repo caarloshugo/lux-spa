@@ -11,7 +11,7 @@ $specialties = $User->getSpecialties();
 if(isset($_GET["id_t"])) {
 	$data = $User->getTherapistsBySpecialty($_GET["id_t"]);
 	
-	echo json_decode($data)
+	echo json_decode($data);
 } else {
 
 }
