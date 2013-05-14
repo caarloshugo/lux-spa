@@ -18,7 +18,6 @@ if(isset($_POST["submit"])) {
 	
 	if($terapeuta !== "0" and $tratamiento !== "0" and $date !== "" and $email !== "" and $password !== "") {
 		
-		
 		$User = new User();
 		$data = $User->login($email, $password);
 		
