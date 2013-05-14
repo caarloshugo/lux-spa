@@ -96,17 +96,11 @@ if(isset($_POST["submit"])) {
 					
 					var html = '<option value="0">Seleccione un terapeuta</option>';
 					
-					console.log(data);
-					
 					for(var record in data) {
-						console.log(data[record]);
+						html = html + '<option value="' + String(data[record].id) + '">' + String(data[record].name) + '</option>';
 					}
 
-			
-				// html = html + '<option value="' + String(item.id) + '">' + String(item.name) + '</option>';
-					
-					
-					//$("#tratamiento").html(html);
+					$("#tratamiento").html(html);
 				});
 			}
 		});
