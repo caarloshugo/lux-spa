@@ -15,8 +15,7 @@ if(isset($_POST["submit"])) {
 	$email       = $_POST["email"];
 	$password    = $_POST["password"];
 	
-	if($terapeuta !== "0" and $tratamiento !== "0" and $date !== "" and $email !== "" and $password !== "") {
-		die(var_dump($email));
+	if($terapeuta !== "0" and $tratamiento !== "0" and $date !== "" and $email !== "" and $password !== "") {		
 		
 		$data = $User->login($email, $password);
 		
