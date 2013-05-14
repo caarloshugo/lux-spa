@@ -36,8 +36,9 @@ class User {
 	}
 	
 	public function login($email, $password) {
+		die(var_dump("select * from users where email='".$email."' and password='". md5($password)) ."'"));
 		$data = $this->psql->query("select * from users where email='".$email."' and password='". md5($password)) ."'";
-		die(var_dump($data));
+		
 		return $data;
 	}
 	
