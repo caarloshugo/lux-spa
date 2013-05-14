@@ -32,7 +32,7 @@ get_header();
 <form id="contactform" class="thre	e-column-form" method="post" action="">
 	
 	<?php if(isset($msg)) { ?>
-		<p class="one-third last">
+		<p style="width:100%;">
 			<?php echo $msg;?>
 		</p>
 	<?php } ?>
