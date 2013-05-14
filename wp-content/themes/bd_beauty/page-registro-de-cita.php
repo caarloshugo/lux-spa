@@ -83,7 +83,7 @@ if(isset($_POST["submit"])) {
 	</p>
 </form>
 
-<script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$("#tratamiento").change(function() {
 			var str = $("#tratamiento:selected").text();
