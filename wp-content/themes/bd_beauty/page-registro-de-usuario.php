@@ -18,9 +18,9 @@ if(isset($_POST["submit"])) {
 		$User = new User();
 		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone, $password);
 		
-		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Gracias por registrarte, recibirás un email" />';
+		$msg = '<input type="text" id="success_msg" name="cf_success_msg" value="Gracias por registrarte, recibirás un email" />';
 	} else {
-		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Por favor, rellene todos los campos correctamente" />';
+		$msg = '<input type="text" id="error_msg" name="cf_error_msg" value="Por favor, rellene todos los campos correctamente" />';
 	}
 	
 }
@@ -33,7 +33,11 @@ get_header();
 	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
 	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
 	
-	<div class="message"></div>
+	<div class="message">
+		<?php if(isset($msg)) { ?>
+			<?php echo $msg;?>
+		<?php } ?>
+	</div>
 		
 	<p class="one-third">
 		<label for="name">Nombre(s)*:</label>
