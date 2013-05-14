@@ -20,7 +20,7 @@ if(isset($_POST["submit"])) {
 		
 		$msg = '<input type="text" id="success_msg" name="cf_success_msg" value="Gracias por registrarte, recibirás un email" />';
 	} else {
-		$msg = '<input type="text" id="error_msg" name="cf_error_msg" value="Por favor, rellene todos los campos correctamente" />';
+		$msg = '<span class="error_msg" name="cf_error_msg">Por favor, rellene todos los campos correctamente</span>';
 	}
 	
 }
