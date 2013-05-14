@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <?php
 
 // User
@@ -34,6 +33,7 @@ get_header();
 
 ?>
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <form id="contactform" class="three-column-form" method="post" action="">
 	
 	<?php if(isset($msg)) { ?>
