@@ -49,7 +49,7 @@ if(isset($_POST["submit"])) {
 		
 	
 	<p class="one-third last">
-		<label for="date">Fecha de la cita*:</label>
+		<label for="date">Fecha de la cita* (dd/mm/yy):</label>
 		<input id="date" name="date" class="required" type="text" />
 	</p>
 	
