@@ -92,6 +92,8 @@ if(isset($_POST["submit"])) {
 				url: "?page_id=1301&id_t=" + str,
 					context: document.body
 				}).done(function(data) {
+					var data = $.parseJSON(data);
+					
 					var html = '<option value="0">Seleccione un terapeuta</option>';
 					
 					console.log(data);
