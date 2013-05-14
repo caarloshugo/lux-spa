@@ -23,10 +23,9 @@ if(isset($_POST["submit"])) {
 		} else {
 			$msg = '<span class="error_msg" name="cf_error_msg">Email y/o constraseña incorrectos</span>';
 		}
+	} else {
+		$msg = '<span class="error_msg" name="cf_error_msg">Por favor, rellene todos los campos correctamente</span>';
 	}
-	
-	$msg = '<span class="error_msg" name="cf_error_msg">Por favor, rellene todos los campos correctamente</span>';
-	
 }
 
 get_header();
