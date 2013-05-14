@@ -97,11 +97,11 @@ if(isset($_POST["submit"])) {
 					console.log(data);
 					
 					for(var record in data) {
-						console.log(record);
+						console.log(data[record]);
 					}
 
 			
-					// html = html + '<option value="' + String(item.id) + '">' + String(item.name) + '</option>';
+				// html = html + '<option value="' + String(item.id) + '">' + String(item.name) + '</option>';
 					
 					
 					//$("#tratamiento").html(html);
