@@ -47,8 +47,7 @@ class User {
 		$query =  "insert into appointments ";
 		$query .= "(id_user,id_therapist,id_specialty,id_hour, day, day_str, status) values ";
 		$query .= "(".$id_user.",".$id_therapist.",".$id_specialty.",".$id_hour.",";
-		$query .= "CAST('".$date."' AS DATE)";
-		$query .= ",'".$date2."',true)";
+		$query .= "CAST('".$date."' AS DATE), true)";
 		
 		die(var_dump($query));
 		
