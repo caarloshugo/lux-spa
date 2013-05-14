@@ -73,6 +73,8 @@ get_header();
 		</select>
 	</p>
 	
+	<img id="loading" src="<?php echo $template_path;?>/images/loader.gif">
+	
 	<p class="one-third">
 		<label for="terapeuta">Terapeuta*:</label>
 		<select name="terapeuta" id="terapeuta" class="required">
@@ -90,6 +92,8 @@ get_header();
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
+		$("#loading").hide();
+		
 		$("#tratamiento").change(function() {
 			var str = $("#tratamiento option:selected").val();
 			
@@ -99,7 +103,12 @@ get_header();
 				$.ajax({
 				url: "?page_id=1301&id_t=" + str,
 					context: document.body
+					beforeSend: function (xhr) {
+						$("#loading").show();
+					}
 				}).done(function(data) {
+					$("#loading").hide();
+					
 					var data = $.parseJSON(data);
 					
 					var html = '<option value="0">Seleccione un terapeuta</option>';
