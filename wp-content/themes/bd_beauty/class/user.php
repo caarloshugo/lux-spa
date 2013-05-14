@@ -56,6 +56,7 @@ class User {
 	}
 	
 	public function getTherapistsBySpecialty($id) {
+		die(var_dump("select * from therapist where id in (select id_therapist from threpaist_to_specialties where id_specialty=" . $id . ")"));
 		$data = $this->psql->query("select * from therapist where id in (select id_therapist from threpaist_to_specialties where id_specialty=" . $id . ")");
 		
 		return $data;
