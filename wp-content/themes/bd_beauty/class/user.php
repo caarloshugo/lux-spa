@@ -42,9 +42,13 @@ class User {
 	}
 	
 	public function setAppointment($id_user, $id_therapist, $id_specialty, $id_hour, $date) {
-		$query = "insert into appointments ";
-		$query .="(id_user,id_therapist,id_specialty,id_hour,day,status) values ";
-		$query .="(".$id_user.",".$id_therapist.",".$id_specialty.",".$id_hour.",".$date.",true)";
+		$date2 = date("Y-m-d", strtotime($date));
+		
+		$query =  "insert into appointments ";
+		$query .= "(id_user,id_therapist,id_specialty,id_hour, day, day_str, status) values ";
+		$query .= "(".$id_user.",".$id_therapist.",".$id_specialty.",".$id_hour.",";
+		$query .= "CAST('".$date."' AS DATE)";
+		$query .= ",'".$date2."',true)";
 		
 		die(var_dump($query));
 		
