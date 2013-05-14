@@ -55,6 +55,7 @@ if(isset($_POST["submit"])) {
 	<p class="one-third">
 		<label for="tratamiento">Tratamiento*:</label>
 		<select name="tratamiento" id="tratamiento" class="required">
+			<option value="0">Seleccione un tratamiento</option>
 			<?php foreach($specialties as $specialty) { ?>
 				<option value="<?php echo $specialty["id"];?>">
 					<?php echo ucfirst($specialty["name"]);?>
@@ -81,7 +82,22 @@ if(isset($_POST["submit"])) {
 		<span class="spinner"><span>Enviando ...</span></span>
 	</p>
 </form>
-      
+
+<script>
+	$(document).ready(function() {
+		$("#tratamiento").change(function() {
+			var str = $("#tratamiento:selected").text();
+			console.log(str);
+			
+			$.ajax({
+			url: "test.html",
+				context: document.body
+			}).done(function() {
+				$(this).addClass("done");
+			});
+		});
+	});
+</script>      
 <?php 
 	get_footer(); 
 }
