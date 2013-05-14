@@ -68,11 +68,7 @@ if(isset($_POST["submit"])) {
 	<p class="one-third">
 		<label for="terapeuta">Terapeuta*:</label>
 		<select name="terapeuta" id="terapeuta" class="required">
-			<?php foreach($therapists as $therapist) { ?>
-				<option value="<?php echo $therapist["id"];?>">
-					<?php echo ucfirst($therapist["name"]);?>
-				</option>
-			<?php } ?>
+			<option value="0">Seleccione un terapeuta</option>
 		</select>
 	</p>
 	
@@ -88,7 +84,6 @@ if(isset($_POST["submit"])) {
 	$(document).ready(function() {
 		$("#tratamiento").change(function() {
 			var str = $("#tratamiento option:selected").val();
-			console.log(str);
 			
 			if(str=='0') {
 				
@@ -96,8 +91,15 @@ if(isset($_POST["submit"])) {
 				$.ajax({
 				url: "?page_id=1301&id_t=" + str,
 					context: document.body
-				}).done(function(txt) {
-					console.log(txt);
+				}).done(function(data) {
+					var html = '<option value="0">Seleccione un terapeuta</option>';
+					
+					$.each(data, function(i, item) {
+						html += '<option value="' + item.id + '">' + item.name + '</option>';
+						
+					});
+					
+					$("#tratamiento").html(html);
 				});
 			}
 		});
