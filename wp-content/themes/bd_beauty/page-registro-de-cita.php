@@ -93,10 +93,10 @@ if(isset($_POST["submit"])) {
 					context: document.body
 				}).done(function(data) {
 					var html = '<option value="0">Seleccione un terapeuta</option>';
-					
+					console.log(data);
 					$.each(data, function(i, item) {
 						console.log(item);
-						html = html + '<option value="' + item.id + '">' + item.name + '</option>';
+						html = html + '<option value="' + String(item.id) + '">' + String(item.name) + '</option>';
 					});
 					
 					$("#tratamiento").html(html);
