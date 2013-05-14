@@ -100,7 +100,7 @@ if(isset($_POST["submit"])) {
 						html = html + '<option value="' + String(data[record].id) + '">' + String(data[record].name) + '</option>';
 					}
 
-					$("#tratamiento").html(html);
+					$("#terapeuta").html(html);
 				});
 			}
 		});
