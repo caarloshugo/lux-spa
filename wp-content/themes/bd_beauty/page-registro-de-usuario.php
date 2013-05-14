@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <?php
 
 if(isset($_POST["submit"])) {
@@ -29,6 +28,7 @@ get_header();
 
 ?>
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <form id="contactform" class="thre	e-column-form" method="post" action="">
 	
 	<?php if(isset($msg)) { ?>
