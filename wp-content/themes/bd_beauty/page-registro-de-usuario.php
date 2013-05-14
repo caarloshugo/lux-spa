@@ -30,13 +30,15 @@ get_header();
 ?>
 
 <form id="contactform" class="thre	e-column-form" method="post" action="">
-	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
-	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
 	
 	<?php if(isset($msg)) { ?>
-		<?php echo $msg;?>
+		<p class="one-third">
+			<?php echo $msg;?>
+		</p>
 	<?php } ?>
-
+	
+	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
+	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
 		
 	<p class="one-third">
 		<label for="name">Nombre(s)*:</label>
