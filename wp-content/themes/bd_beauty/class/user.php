@@ -41,6 +41,18 @@ class User {
 		return $data;
 	}
 	
+	public function setAppointment($id_user, $id_therapist, $id_specialty, $id_hour, $date) {
+		$query = "insert into appointments ";
+		$query .="(id_user,id_therapist,id_specialty,id_hour,day,status) values ";
+		$query .="(".$id_user.",".$id_therapist.",".$id_specialty.",".$id_hour.",".$date.",true)";
+		
+		die(var_dump($query));
+		
+		$data = $this->psql->query($query);
+		
+		return $data;
+	}
+	
 	public function logout() {
 		
 	}
@@ -64,13 +76,13 @@ class User {
 	} 
 	
 	public function edit() {
-		$data = $this->psql->query("insert into * from users");
+		$data = $this->psql->query("select * from users");
 		
 		return $data;
 	}
 	
 	public function get($id) {
-		$data = $this->psql->query("insert into * from users");
+		$data = $this->psql->query("select * from users");
 		
 		return $data;
 	}
