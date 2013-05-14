@@ -6,7 +6,6 @@ include "class/user.php";
 include "class/functions/string.php";
 
 $User = new User();
-$therapists  = $User->getTherapists();
 $specialties = $User->getSpecialties();
 	
 if(isset($_POST["submit"])) {
@@ -17,8 +16,7 @@ if(isset($_POST["submit"])) {
 	$password    = $_POST["password"];
 	
 	if($terapeuta !== "0" and $tratamiento !== "0" and $date !== "" and $email !== "" and $password !== "") {
-		
-		$User = new User();
+		die(var_dump($email, $password));
 		$data = $User->login($email, $password);
 		
 		if($data) {
