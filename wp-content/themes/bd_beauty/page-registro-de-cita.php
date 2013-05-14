@@ -46,7 +46,7 @@ get_header();
 
 	<p class="one-third">
 		<label for="email">E-Mail*:</label>
-		<input id="email" name="email" class="required" type="text" />
+		<input id="email" name="email" class="required" type="text" <?php echo (isset($email)) ? 'value="'.$email.'"' : '';?>/>
 	</p>
 	
 	
@@ -58,7 +58,7 @@ get_header();
 	
 	<p class="one-third last">
 		<label for="date">Fecha de la cita* (dd/mm/yy):</label>
-		<input id="date" name="date" class="required" type="text" />
+		<input id="date" name="date" class="required" type="text" <?php echo (isset($date)) ? 'value="'.$date.'"' : '';?>/>
 	</p>
 	
 	<p class="one-third">
