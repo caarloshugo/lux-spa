@@ -86,11 +86,11 @@ if(isset($_POST["submit"])) {
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#tratamiento").change(function() {
-			var str = $("#tratamiento:selected").text();
+			var str = $("#tratamiento option:selected").text();
 			console.log(str);
 			
 			$.ajax({
-			url: "test.html",
+			url: "?page_id=1223",
 				context: document.body
 			}).done(function() {
 				$(this).addClass("done");
