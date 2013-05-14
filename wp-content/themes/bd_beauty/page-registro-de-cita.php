@@ -22,6 +22,9 @@ if(isset($_POST["submit"])) {
 		if($data) {
 			/* Falta hacer el select de horas */
 			
+			$dat = date("Y-m-d", strtotime($date));
+			die(var_dump($dat));
+			
 			$data = $User->setAppointment($data[0]["id"], $terapeuta, $tratamiento, 1, $date);
 			
 		} else {
