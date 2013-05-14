@@ -95,8 +95,8 @@ if(isset($_POST["submit"])) {
 					var html = '<option value="0">Seleccione un terapeuta</option>';
 					
 					$.each(data, function(i, item) {
-						html += '<option value="' + item.id + '">' + item.name + '</option>';
-						
+						console.log(item);
+						html = html + '<option value="' + item.id + '">' + item.name + '</option>';
 					});
 					
 					$("#tratamiento").html(html);
