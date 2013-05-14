@@ -20,7 +20,10 @@ if(isset($_POST["submit"])) {
 		$data = $User->login($email, $password);
 		
 		if($data) {
-			die(var_dump($data));
+			/* Falta hacer el select de horas */
+			
+			$data = $User->setAppointment($data[0]["id"], $terapeuta, $tratamiento, 1, $date);
+			
 		} else {
 			$msg = '<span class="error_msg" name="cf_error_msg">Email y/o constraseña incorrectos</span>';
 		}
