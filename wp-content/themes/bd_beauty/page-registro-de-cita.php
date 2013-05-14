@@ -56,7 +56,9 @@ if(isset($_POST["submit"])) {
 		<label for="tratamiento">Tratamiento*:</label>
 		<select name="tratamiento" id="tratamiento" class="required">
 			<?php foreach($specialties as $specialty) { ?>
-				<option value="<?php echo $specialty["id"];?>"><?php echo $specialty["name"];?></option>
+				<option value="<?php echo $specialty["id"];?>">
+					<?php echo ucfirst($specialty["name"]);?>
+				</option>
 			<?php } ?>
 		</select>
 	</p>
@@ -65,7 +67,9 @@ if(isset($_POST["submit"])) {
 		<label for="terapeuta">Terapeuta*:</label>
 		<select name="terapeuta" id="terapeuta" class="required">
 			<?php foreach($therapists as $therapist) { ?>
-				<option value="<?php echo $therapist["id"];?>"><?php echo $therapist["name"];?></option>
+				<option value="<?php echo $therapist["id"];?>">
+					<?php echo ucfirst($therapist["name"]);?>
+				</option>
 			<?php } ?>
 		</select>
 	</p>
