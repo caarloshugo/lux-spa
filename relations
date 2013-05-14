@@ -1,0 +1,52 @@
+-ESMERALDA: 
+masaje relajante
+reflexología
+tratamientos faciales
+luz pulsada
+aparatologia
+
+
+-SANDRA: 
+masaje relajante
+masaje deportivo
+masaje descontracturante
+depilación
+luz pulsada
+
+-YUNUET: 
+masaje relajante
+masaje reductivo
+
+
+-ENEIDA: 
+masaje deportivo
+masaje sueco
+masaje descontracturante
+masaje terapeutico
+
+
+ALL:
+masaje relajante
+masaje reductivo
+masaje deportivo
+masaje sueco
+masaje descontracturante
+masaje terapeutico
+reflexología
+tratamientos faciales
+luz pulsada
+aparatologia
+depilación
+
+
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje relajante',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje reductivo',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje deportivo',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje sueco',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje descontracturante',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'masaje terapeutico',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'reflexología',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'tratamientos faciales',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'luz pulsada',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'aparatologia',1,true);
+insert into specialties (id_treatment,name, duration,status) values (1, 'depilación',1,true);

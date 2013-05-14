@@ -82,8 +82,8 @@ if(isset($_POST["submit"])) {
 		<span class="spinner"><span>Enviando ...</span></span>
 	</p>
 </form>
-
-<script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$("#tratamiento").change(function() {
 			var str = $("#tratamiento:selected").text();
