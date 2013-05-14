@@ -9,23 +9,22 @@ $therapists  = $User->getTherapists();
 $specialties = $User->getSpecialties();
 	
 if(isset($_POST["submit"])) {
-	$name      = $_POST["cf_name"];
-	$lastname  = $_POST["lastname"];
-	$birthday  = $_POST["birthday"];
-	$email     = $_POST["email"];
-	$sex       = $_POST["sex"];
-	$telephone = $_POST["telephone"];
+	$terapeuta   = $_POST["terapeuta"];
+	$tratamiento = $_POST["tratamiento"];
+	$date        = $_POST["date"];
+	$email       = $_POST["email"];
+	$password    = $_POST["password"];
 	
-	if($name !== "" and $lastname !== "" and $email !== "" and $birthday !== "" and $telephone !== "") {
+	if($terapeuta !== "0" and $tratamiento !== "0" and $date !== "" and $email !== "" and $password !== "") {
 		
-
+		
 		$User = new User();
-		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone);
+		$data = $User->login($email, $password);
 		
-		echo '<input type="text" id="success_msg" name="cf_success_msg" value="Thank you for your email we will fixed appointment by phone call" />';
-	} else {
-		echo '<input type="text" id="error_msg" name="cf_error_msg" value="Please fill in all fields correctly" />';
+		die(var_dump($data));
 	}
+	
+	echo "no";
 	
 } else {	
 	get_header();
