@@ -24,6 +24,9 @@ if(isset($_POST["submit"])) {
 			
 			$data = $User->setAppointment($data[0]["id"], $terapeuta, $tratamiento, 1, $date);
 			
+			$msg = '<span class="success_msg" name="cf_success_msg">';
+			$msg .= 'Nombre! su cita a sido agendanda para el dia DIA a las HORAS, en breve nos pondremos en contacto con usted';
+			$msg .= '</span>';
 		} else {
 			$msg = '<span class="error_msg" name="cf_error_msg">Email y/o constraseña incorrectos</span>';
 		}
