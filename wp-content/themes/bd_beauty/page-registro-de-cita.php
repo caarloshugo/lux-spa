@@ -22,19 +22,31 @@ if(isset($_POST["submit"])) {
 		$User = new User();
 		$data = $User->login($email, $password);
 		
-		die(var_dump($data));
+		if($data) {
+			die(var_dump($data));
+		} else {
+			$msg = '<span class="error_msg" name="cf_error_msg">Email y/o constraseña incorrectos</span>';
+		}
 	}
 	
-	echo "no";
+	$msg = '<span class="error_msg" name="cf_error_msg">Por favor, rellene todos los campos correctamente</span>';
 	
-} else {	
-	get_header();
+}
+
+get_header();
+
 ?>
 
 <form id="contactform" class="three-column-form" method="post" action="">
+	
+	<?php if(isset($msg)) { ?>
+		<p style="width:100%;">
+			<?php echo $msg;?>
+		</p>
+	<?php } ?>
+	
 	<input type="hidden" id="receiver" name="cf_receiver" value="info[at]bdtheme.com" />
 	<input type="hidden" id="email_signature" name="cf_email_signature" value="Appointment Booking" />
-
 
 	<p class="one-third">
 		<label for="email">E-Mail*:</label>
@@ -120,5 +132,4 @@ if(isset($_POST["submit"])) {
   
 <?php 
 	get_footer(); 
-}
 ?>
