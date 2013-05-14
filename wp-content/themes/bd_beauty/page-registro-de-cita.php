@@ -4,7 +4,8 @@ include "class/user.php";
 include "class/functions/string.php";
 
 $User = new User();
-$therapists = $User->getTherapists();
+$therapists  = $User->getTherapists();
+$specialties = $User->getSpecialties();
 
 if(isset($_POST["submit"])) {
 	$name      = $_POST["cf_name"];
@@ -54,8 +55,9 @@ if(isset($_POST["submit"])) {
 	<p class="one-third">
 		<label for="tratamiento">Tratamiento*:</label>
 		<select name="tratamiento" id="tratamiento" class="required">
-			<option value="1">tratamiento 1</option>
-			<option value="2">tratamiento 2</option>
+			<?php foreach($specialties as $specialty) { ?>
+				<option value="<?php echo $specialty["id"];?>"><?php echo $specialty["name"];?></option>
+			<?php } ?>
 		</select>
 	</p>
 	
