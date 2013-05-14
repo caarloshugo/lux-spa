@@ -74,16 +74,14 @@ get_header();
 		</select>
 	</p>
 	
-	<img id="loading" src="<?php echo $template_path;?>/images/loader.gif">
-	
 	<p class="one-third">
 		<label for="terapeuta">Terapeuta*:</label>
 		<select name="terapeuta" id="terapeuta" class="required">
 			<option value="0">Seleccione un terapeuta</option>
 		</select>
+		
+		<img id="loading" src="<?php echo $template_path;?>/images/loader.gif">
 	</p>
-	
-	<div class="message"></div>
 
 	<p>
 		<input type="submit" name="submit" value="Registrar" />
