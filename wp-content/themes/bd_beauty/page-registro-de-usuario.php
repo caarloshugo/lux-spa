@@ -42,27 +42,27 @@ get_header();
 		
 	<p class="one-third">
 		<label for="name">Nombre(s)*:</label>
-		<input id="name" name="cf_name" class="required" type="text" />
+		<input id="name" name="cf_name" class="required" type="text" <?php echo (isset($name)) ? 'value="'.$name.'"' : '';?>/>
 	</p>
 
 	<p class="one-third">
 		<label for="lastname">Apellidos*:</label>
-		<input id="lastname" name="lastname" class="required" type="text" />
+		<input id="lastname" name="lastname" class="required" type="text" <?php echo (isset($lastname)) ? 'value="'.$lastname.'"' : '';?>/>
 	</p>
 	
 	<p class="one-third last">
 		<label for="birthday">Fecha de cumplea&ntilde;os*:</label>
-		<input id="birthday" name="birthday" class="required" type="text" />
+		<input id="birthday" name="birthday" class="required" type="text" <?php echo (isset($birthday)) ? 'value="'.$birthday.'"' : '';?>/>
 	</p>
 
 	<p class="one-third">
 		<label for="email">E-Mail*:</label>
-		<input id="email" name="email" class="required" type="text" />
+		<input id="email" name="email" class="required" type="text" <?php echo (isset($email)) ? 'value="'.$email.'"' : '';?>/>
 	</p>
 	
 	<p class="one-third">
 		<label for="telephone">Tel&eacute;fono*:</label>
-		<input id="telephone" name="telephone" class="required" type="text" />
+		<input id="telephone" name="telephone" class="required" type="text" <?php echo (isset($telephone)) ? 'value="'.$telephone.'"' : '';?>/>
 	</p>
 	
 	<p class="one-third last">
