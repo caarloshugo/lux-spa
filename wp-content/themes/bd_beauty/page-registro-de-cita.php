@@ -1,4 +1,11 @@
 <?php
+// User
+include "class/user.php";
+include "class/functions/string.php";
+
+$User = new User();
+$therapists = $User->getTherapists();
+
 if(isset($_POST["submit"])) {
 	$name      = $_POST["cf_name"];
 	$lastname  = $_POST["lastname"];
@@ -8,9 +15,7 @@ if(isset($_POST["submit"])) {
 	$telephone = $_POST["telephone"];
 	
 	if($name !== "" and $lastname !== "" and $email !== "" and $birthday !== "" and $telephone !== "") {
-		// User
-		include "class/user.php";
-		include "class/functions/string.php";
+		
 
 		$User = new User();
 		$data = $User->add($name, $lastname, $email, $birthday, $sex, $telephone);
@@ -57,8 +62,9 @@ if(isset($_POST["submit"])) {
 	<p class="one-third">
 		<label for="terapeuta">Terapeuta*:</label>
 		<select name="terapeuta" id="terapeuta" class="required">
-			<option value="1">terapeuta 1</option>
-			<option value="2">terapeuta 2</option>
+			<?php foreach($therapists as $therapist) { ?>
+				<option value="<?php echo $therapist["id"];?>"><?php echo $therapist["name"];?></option>
+			<?php } ?>
 		</select>
 	</p>
 	

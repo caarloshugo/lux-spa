@@ -43,6 +43,12 @@ class User {
 		
 	}
 	
+	public function getTherapists() {
+		$data = $this->psql->query("select * from therapist");
+		
+		return $data;
+	}
+	
 	public function edit() {
 		$data = $this->psql->query("insert into * from users");
 		
