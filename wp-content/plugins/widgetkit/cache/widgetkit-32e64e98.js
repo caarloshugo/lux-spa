@@ -1,0 +1,1 @@
+var widgetkitajax="http://107.22.236.217/lux-spa/wp-admin/admin-ajax.php?action=widgetkit&ajax=1";
